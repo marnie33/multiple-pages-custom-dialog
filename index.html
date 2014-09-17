@@ -1,0 +1,67 @@
+<!--Created by: Cy <3
+(aka: Marnie Tisdale)
+Date Created: 9/15/14
+Last Modified: 9/16/14
+
+Summary: I used jQuery and JavaScript to create a custom dialog. This single dialog can be accessed from multiple html files, and have custom information per page as well-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <link href='http://fonts.googleapis.com/css?family=Arimo|Raleway|Roboto+Slab' rel='stylesheet' type='text/css'>
+    <!--^Google fonts import library-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" type="text/css"/>
+    <!--^import bootstrap css-->
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/themes/smoothness/jquery-ui.css" type="text/css"/>
+    <!--^jQuery UI css import-->
+    <link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+    <!--^my stylesheet for "homegrown" css-->
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!--^ jQuery import-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <!--^ bootstraps js file import-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
+    <!--^ jQuery UI manipulation import-->
+    <script type="text/javascript" src="script.js"></script>
+    <!--^ my JavaScript/jQuery file for index.html-->
+    
+</head>
+    <body id="indexBody">
+        <!--header-->
+        <div class="header" id="indexHead">
+            <div class="container">
+            <center>Single Dialog, Multiple Pages</center>
+            </div>
+        </div>
+        
+        <!--this is the 'main' section of the web page-->
+        <div class="jumbotron" id="jumbo">
+            <div class="container">
+                <div class="row">
+                   <center>
+                       <!--click activates the custom dialog box-->
+                       <button id="indexBtn"   onclick="Alert.render('&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This is a single dialog box created with JavaScript and jQuery&#x2E; This is the first HTML file &#x28;aka&#x3A; web page&#x29; to call  the dialog and add its own text&#33;')">Click Me!</button>
+                       <br>
+                       <!--move to next web page/screen-->
+                       <button class="pull-right" id="indexBtn"  onclick="window.location.replace('next.html')">Next</button>
+                    </center>
+                    
+                    <!--placeholders to put dialog and screen overlay into-->
+                    <div id="boxoverlay"></div>
+                    <div id="boxholder"></div>
+                </div><!--end 'row'-->
+            </div><!--end containter-->
+        </div><!--end jumbotron-->
+        
+        <!--footer-->
+        <div class="footer" id="indexFoot">
+            <div class="container">
+                <div id="sig" class="pull-left">By: Cy &lt;3</div>
+                <div id="copy" class="pull-right">2014 &copy;</div>
+            </div>    
+        </div>
+        
+      </body>
+</html>
