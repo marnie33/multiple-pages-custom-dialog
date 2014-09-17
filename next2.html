@@ -1,0 +1,69 @@
+<!--Created by: Cy <3
+(aka: Marnie Tisdale)
+Date Created: 9/15/14
+Last Modified: 9/17/14
+
+Summary: I used jQuery and JavaScript to create a custom dialog. This single dialog can be accessed from multiple html files, and have custom information per page as well-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <link href='http://fonts.googleapis.com/css?family=Arimo|Raleway|Roboto+Slab' rel='stylesheet' type='text/css'>
+    <!--^Google fonts import library-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" type="text/css"/>
+    <!--^import bootstrap css-->
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/themes/smoothness/jquery-ui.css" type="text/css"/>
+    <!--^jQuery UI css import-->
+    <link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+    <!--^my stylesheet for "homegrown" css-->
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!--^ jQuery import-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <!--^ bootstraps js file import-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
+    <!--^ jQuery UI manipulation import-->
+    <script type="text/javascript" src="script.js"></script>
+    <!--^ my JavaScript/jQuery file for next2.html-->
+    
+</head>
+    <body id="next2Main">
+        <!--header-->
+        <div class="header" id="next2Head">
+            <div class="container">
+            <center>Single Dialog, Multiple Pages page 3</center>
+            </div>
+        </div>
+        
+        <!--this is the 'main' section of the web page-->
+        <div class="jumbotron" id="jumbo">
+            <div class="container">
+                <div class="row">
+                   <center>
+                       <!--button activates custom dialog, adds new content-->
+                       <button id="next2Btn" onclick="Alert.render('&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This is still the same dialog box created with jQuery/JavaScript&#33; This is the third HTML file &#x28;web page&#x29; to call the same dialog&#x2C; and once again the content has changed&#33;')">Click Me!</button>
+                       <br>
+                       <!--returns to last web page/screen-->
+                       <button id="next2Btn" class="pull-left" onclick="window.location.replace('next.html')">Back</button>
+                       <!--returns to start-->
+                       <button id="next2Btn" class="pull-right" onclick="window.location.replace('index.html')">Start Over</button>
+                    </center>
+                    
+                    <!--placeholders to put dialog and screen overlay into-->
+                    <div id="boxoverlay"></div>
+                    <div id="boxholder"></div>
+                </div><!--end 'row'-->
+            </div><!--end containter-->
+        </div><!--end jumbotron-->
+        
+        <!--footer-->
+        <div class="footer" id="next2Foot">
+            <div class="container">
+                <div id="sig" class="pull-left">By: Cy &lt;3</div>
+                <div id="copy" class="pull-right">2014 &copy;</div>
+            </div>    
+        </div>
+        
+      </body>
+</html>
