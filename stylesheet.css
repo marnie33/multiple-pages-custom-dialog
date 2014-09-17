@@ -1,0 +1,192 @@
+.dialogoverlay {
+    opacity: .9;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: black;
+    width: 100%;
+    z-index: 10;
+}
+
+.dialogbox {
+    position: fixed;
+    background: #0B6138;
+    border-radius: 7px;
+    width: 550px;
+    z-index: 10;
+    padding: 2px;
+    box-shadow: 3px 3px 7px 3px #848484;
+}
+
+.dialogbox div {
+    background: #D0F5A9;
+    margin: 4px;
+    padding: 2px;
+}
+
+.dialogbox div #dialogboxhead {
+    background: #B5F7B5;
+    margin-bottom: 5px;
+    font-size: 22px;
+    font-family: 'Raleway', sans-serif;
+    padding: 10px;
+    color: #0B3B24;
+    text-align: center;
+    font-weight: bold;
+    border: 2px solid #0B6138;
+    box-shadow: 2px 2px 5px 2px #424242;
+    text-shadow: 3px 3px 7px #424242;
+}
+
+.dialogbox div #dialogboxbody {
+    background: #F2F5A9;
+    padding: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-family: 'Arimo', sans-serif;
+    font-size: 20px;
+    color: #0B3B24;
+    border: 2px solid #0B6138;
+    box-shadow: 2px 2px 5px 2px #424242;
+}
+
+.dialogbox div #dialogboxfoot {
+    background: #B5F7B5;
+    padding: 10px;
+    text-align: right;
+    margin-top: 5px;
+    border: 2px solid #0B6138;
+    box-shadow: 2px 2px 5px 2px #424242;
+}
+
+#okbtn {
+    background: #F2F5A9;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    color: #0B3B24;
+    border: 2px solid #0B6138;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px 2px #424242;
+}
+
+#indexHead {
+    margin-top: 25px;
+    padding: 10px;
+    background-color: #642EFE;
+    border: 4px solid #3A01DF;
+    color: #B9A6F2;
+    text-shadow: 3px 3px 7px #424242;
+ }
+
+#indexFoot {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 10px;
+    background-color: #642EFE;
+    border: 4px solid #3A01DF;
+    color: #B9A6F2;
+    text-shadow: 3px 3px 7px #424242;
+}
+#jumbo {
+    background-color: transparent;
+}
+
+#indexBody {
+    background: linear-gradient(#FA5882,#F5A9BC,#F8C6D2,#F5A9BC,#FA5882,#DF013A);
+/*    background-repeat: no-repeat;*/
+    background-attachment: fixed;
+}
+
+#indexBtn {
+    background-color: #B9A6F2;
+    border: 2px solid #3A01DF;
+    color: #642EFE;
+    padding: 15px;
+    font-weight: bold;
+    font-family: 'Roboto Slab', serif;
+    font-size: 18px;
+    text-shadow: 3px 3px 7px #808080;
+    box-shadow: 3px 3px 7px 3px #424242;
+}
+
+#nextMain {
+    background-image: url(http://upload.wikimedia.org/wikipedia/commons/1/16/Appearance_of_sky_for_weather_forecast,_Dhaka,_Bangladesh.JPG);
+    background-size: cover;
+}
+
+#nextHead {
+    background-color: #F4FA58;
+    color: #FF8000;
+    border-top: 4px solid #DC0A0A;
+    border-bottom: 4px solid #DC0A0A;
+    margin-top: 25px;
+    padding: 10px;
+    text-shadow: 3px 3px 7px #b6b6b6;
+}
+
+#nextBtn {
+    background-color: #E0F2F7;
+    border: 2px solid #0080FF;
+    color: #0080FF;
+    text-shadow: 3px 3px 7px #808080;
+    box-shadow: 3px 3px 7px 3px #808080;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Roboto Slab', serif;
+}
+
+#nextFoot {
+    background-color: #6CDC46;
+    color: #0080FF;
+    border-top: 4px solid #3A01DF;
+    border-bottom: 4px solid #3A01DF;
+    margin-top: 25px;
+    padding: 10px;
+    text-shadow: 3px 3px 7px #808080;
+}
+
+.header {
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.footer {
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#next2Main {
+    background-image: url(http://upload.wikimedia.org/wikipedia/commons/5/50/Landscape_Carina_Nebula.jpg);
+    background-size: cover;
+}
+
+#next2Head {
+    margin-top: 25px;
+    padding: 10px;
+    background-color: rgba(0,0,0,.6);
+    color: #F7F8E0;
+    text-shadow: 3px 3px 7px #CEF6EC;
+}
+
+#next2Btn {
+    border: 3px solid black;
+    background-color: rgba(0,0,0,.6);
+    color: #F7F8E0;
+    padding: 10px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    font-size: 18px;
+    text-shadow: 3px 3px 7px #CEF6EC;
+    box-shadow: 3px 3px 7px 3px #01DFD7;
+}
+
+#next2Foot {
+    margin-top: 25px;
+    padding: 10px;
+    background-color: rgba(0,0,0,.6);
+    color: #F7F8E0;
+    text-shadow: 3px 3px 7px #CEF6EC;
+}
